@@ -24,7 +24,7 @@ void load_array(int target[])
 {
 	std::cout << "Loading Array" << std::endl;
 	for (int i = 0; i < SIZE; i++)
-		target[i] = rand() % 20 + 1;     // range 1 to 200
+		target[i] = rand() % 20 + 1;     // range 1 to 20
 	std::cout << "Array loaded successfully." << std::endl;
 } 
 
@@ -34,7 +34,7 @@ void print_array(int target[])
 		cout << target[i] << " ";
 	cout << endl;
 }
-
+//Randomization improves chances of even partition and nlogn running time.
 void rand_quick_sort(int target[], int p, int r)
 {
 	if (p < r)
