@@ -24,7 +24,7 @@ void load_array(int target[])
 {
 	std::cout << "Loading Array" << std::endl;
 	for (int i = 0; i < SIZE; i++)
-		target[i] = rand() % 20 + 1;     // range 1 to 20
+		target[i] = rand() % 20 + 1;// range 1 to 20
 	std::cout << "Array loaded successfully." << std::endl;
 } 
 
@@ -47,7 +47,7 @@ void rand_quick_sort(int target[], int p, int r)
 //Exchanges first element with element from a random index
 int rand_partition(int target[], int p, int r)
 {
-	int i = rand() % (r - p) + p;
+	int i = rand() % (r - p) + p;// range p to r
 	exchange(target[p], target[i]);
 	return partition(target, p, r);
 }
